@@ -1,10 +1,10 @@
 .grid.gap-4.text-center
   = form_with model: @user do |f|
     = f.label :username 
-    = f.text_field :username 
+    = f.text_field :username
 
     = f.label :email 
-    = f.email_field :email 
+    = f.email_field :email, placeholder: "Email@example.com"
     
     = f.label :password 
     = f.password_field :password 
