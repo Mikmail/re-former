@@ -1,4 +1,4 @@
-.grid.gap-4.text-center
+.grid.gap-4.text-center.items-center
   = form_with model: @user do |f|
     = f.label :username 
     = f.text_field :username
@@ -10,6 +10,3 @@
     = f.password_field :password 
 
     = f.submit "Create user"
-
-  = link_to edit_user_path do 
-    Edit
